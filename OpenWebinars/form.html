@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>formulari reserva</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' href='index.css'>
+    <script src='script.js'></script>
+</head>
+
+<body>
+ <h1>Reserva la teva habitació:</h1>
+
+<div class="form">
+<form action="reservas.php" method="post" id="form">
+    <label for="nombre">Nom i cognoms:</label>
+    <input type="text" id="nombre" name="nombre" />
+
+<br>
+
+
+    <label for="email">Correu electrònic:</label>
+    <input type="email" id="email" name="email" />
+
+<br>
+
+
+    <label for="entrada">Data d'entrada:</label>
+    <input type="date" id="entrada" name="entrada" />
+
+<br>
+
+
+    <label for="salida">Data de sortida:</label>
+    <input type="date" id="salida" name="salida" />
+
+<br>
+         <label for="habitacion">Tipus d'habitació:</label>
+    <select id="habitacion" name="habitacion" >
+    <option value="1" selected>Habitació individual</option>
+     <option value="2">Habitació doble</option>
+      <option value="3">Habitació presidencial</option>
+    </select>
+
+<br>
+<br>
+
+          <button type="submit">Reservar</button>
+</form>
+</div>
+
+</body>
+</html>
